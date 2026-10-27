@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* ── Base Resets ──────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #050510;
+  color: #e0e0f0;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Canvas fills viewport ────────────────────────────────── */
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+}
+
+/* ── FPS Stats panel styling ──────────────────────────────── */
+.stats-panel {
+  position: fixed !important;
+  top: 4px !important;
+  left: 4px !important;
+  z-index: 100 !important;
+}
+
+/* ── Leva debug panel customization ───────────────────────── */
+#leva__root {
+  --leva-sizes-rootWidth: 300px;
+  --leva-colors-highlight1: #ff3377;
+  --leva-colors-highlight2: #00d4ff;
+  --leva-colors-accent1: #ff6b35;
+  --leva-colors-accent2: #22ffaa;
+  --leva-colors-elevation1: #0a0a1599;
+  --leva-colors-elevation2: #0d0d1a99;
+  --leva-colors-elevation3: #11112099;
+  z-index: 200 !important;
+}
+
+/* ── Selection color ──────────────────────────────────────── */
+::selection {
+  background: #ff337766;
+  color: #ffffff;
+}
+
+/* ── Scrollbar (hidden for game) ──────────────────────────── */
+::-webkit-scrollbar {
+  display: none;
+}
